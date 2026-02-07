@@ -1,48 +1,74 @@
-<<<<<<< HEAD
-# Antigravity Analytics
+📊 UserEcho – Website Traffic & User Behavior Analytics Tool
 
-## Overview
-A full-stack web analytics platform featuring:
-- **Backend**: FastAPI (Python) with SQLite database.
-- **Frontend**: React (Vite) with a premium dark-mode dashboard.
-- **Tracker**: Lightweight JavaScript tracker (`tracker.js`).
+UserEcho is a website analytics system designed to track, store, and analyze user interactions on a website.
+The project focuses on understanding how users behave, what pages they interact with, and how they navigate through a website, helping developers and product teams make data-driven decisions.
 
-## Features
-- Real-time visitor counting.
-- Event tracking (Pageviews, Sessions, Clicks).
-- Analytics Dashboard (Charts, Tables).
-- AI-based Traffic Prediction (Peak time estimation).
+Instead of relying on third-party analytics tools, UserEcho provides a custom-built backend-driven solution that gives full control over data collection, storage, and visualization.
 
-## Setup & Run
+🎯 What This Project Does
 
-### Prerequisites
-- Python 3.8+
-- Node.js & npm
+UserEcho collects real-time user activity data from a website and processes it through a backend system.
+It records essential interaction details such as:
 
-### 1. Backend (API)
-The backend runs on port `8000`.
-```bash
-cd backend
-# Create virtual env (optional but recommended)
-python -m venv venv
-# Windows:
-.\venv\Scripts\activate
-# Mac/Linux:
-source venv/bin/activate
+Pages visited by users
 
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
+Type of interaction (page view, click, scroll, etc.)
 
-### 2. Frontend (Dashboard)
-The frontend runs on port `5173`.
-```bash
-cd frontend
-npm install
-npm run dev
-```
+Time and frequency of visits
 
-### 3. Usage
-- Open `http://localhost:5173` to view the Dashboard.
-- The `tracker.js` is automatically embedded.
-- Browse the dashboard to generate events (it tracks itself!).
+Device and browser information
+
+User navigation patterns
+
+All collected data is stored securely in a database and can later be used for analytics dashboards, reports, and insights.
+
+🛠️ Tech Stack
+
+Backend Framework: Python (Flask)
+Lightweight and efficient REST API for receiving and processing tracking data.
+
+Database: SQLite
+Used for structured storage of user activity data (scalable to MySQL/PostgreSQL).
+
+ORM / Database Layer: SQLAlchemy
+Handles database interactions securely and cleanly.
+
+API Design: RESTful APIs with JSON
+Ensures smooth communication between frontend tracking scripts and backend.
+
+Frontend Integration: JavaScript Tracking Script
+Sends user interaction data to the backend using HTTP requests.
+
+Data Captured:
+
+Timestamps
+
+Page URLs
+
+Event types
+
+Device & browser metadata
+
+Visualization (Future Scope):
+Chart.js / Recharts / Power BI for dashboards and reports.
+
+Version Control: Git & GitHub
+
+Deployment Ready:
+Can be deployed on platforms like Render, Railway, AWS, or similar services.
+
+🚀 Why This Project Matters
+
+UserEcho demonstrates:
+
+Backend API design
+
+Database modeling
+
+Real-world data collection
+
+Scalable system thinking
+
+Analytics-focused problem solving
+
+It is suitable for academic projects, portfolio showcases, and as a foundation for production-level analytics systems.
